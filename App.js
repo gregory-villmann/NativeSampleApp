@@ -1,11 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
 import {Pressable, SafeAreaView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import {Button} from "@react-native-material/core";
+import {Button, firstChild} from "@react-native-material/core";
+import Splash from "./src/screens/auth/splash";
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Button title={"Click me "}></Button>
+      <Splash></Splash>
     </SafeAreaView>
   );
 }
@@ -14,7 +14,5 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
